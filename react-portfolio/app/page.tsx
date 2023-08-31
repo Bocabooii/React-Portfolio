@@ -2,7 +2,8 @@ import Image from 'next/image'
 import {BsFillMoonStarsFill, BsInstagram, BsLinkedin,} from 'react-icons/bs';
 import deved from '../public/Linkedin-headshot.jpg';
 import {AiFillHtml5,} from 'react-icons/ai';
-import {BiLogoCss3, BiLogoNodejs, BiLogoReact, BiLogoMongodb, BiLogoGraphql, } from 'react-icons/bi';
+import {BiLogoCss3, BiLogoNodejs, BiLogoReact, BiLogoMongodb, BiLogoGraphql, BiLogoHeroku, } from 'react-icons/bi';
+import {SiMysql, SiPostman} from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -42,16 +43,21 @@ export default function Home() {
       
       {/* This portion of my portfolio contains all the computer languages I have experience in */}
 
-      <section className='my-10 flex-col justify-center font-mono text-xl text-center py-5 leading-8 text-gray-800'>
-        <h3 className=''>
+      <section className='bg-gradient-to-r from-slate-300 via-white to-slate-300 rounded-2xl my-10 flex-col font-mono text-xl py-5 leading-8 text-gray-800'>
+        <h3 className='text-center'>
           Below are listed the current languages and querys I have experience in 
         </h3>
-        <ul className=''>
-          <li>
-            <AiFillHtml5 />
-            <BiLogoCss3 />
-            <BiLogoNodejs />
-            <BiLogoReact />
+        <ul className='py-10'>
+          <li className='flex flex-wrap shrink-0 gap-x-20 gap-y-5 justify-center text-6xl  my-5'>
+            <AiFillHtml5 className='text-orange-500' />
+            <BiLogoCss3 className='text-blue-500' />
+            <BiLogoNodejs className='text-green-600' />
+            <BiLogoReact className='text-cyan-400' />
+            <BiLogoHeroku className='text-violet-800' />
+            <BiLogoMongodb className='text-green-700' />
+            <BiLogoGraphql className='text-pink-500' />
+            <SiMysql className='text-sky-800' />
+            <SiPostman className='text-orange-600' />
           </li>
         </ul>
       </section>
